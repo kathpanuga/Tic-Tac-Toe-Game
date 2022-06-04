@@ -196,6 +196,38 @@ namespace Tic_Tac_Toe_Game_in_Visual_Basic
                 MessageBox.Show(winner + " - Ah ah, Ikaw ang panalo!", "Paburger ka naman");
             }//end if
         }//end checkforwinner
+
+        private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            turn = true;
+            turn_count = 0;
+
+            try
+            {
+                abc1.Enabled = true;
+                abc2.Enabled = true;
+                abc3.Enabled = true;
+                cab1.Enabled = true;
+                cab2.Enabled = true;
+                cab3.Enabled = true;
+                bac1.Enabled = true;
+                bac2.Enabled = true;
+                bac3.Enabled = true;
+
+                abc1.Text = "";
+                abc2.Text = "";
+                abc3.Text = "";
+                cab1.Text = "";
+                cab2.Text = "";
+                cab3.Text = "";
+                bac1.Text = "";
+                bac2.Text = "";
+                bac3.Text = "";
+            }
+
+            catch { }
+
+        }
     }
    
 }
