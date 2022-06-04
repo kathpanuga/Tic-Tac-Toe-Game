@@ -236,7 +236,15 @@ namespace Tic_Tac_Toe_Game_in_Visual_Basic
 
                 MessageBox.Show(winner + " - Ah ah, Ikaw ang panalo!", "Paburger ka naman");
             }//end if
+            else
+            {
+                if (turn_count == 9)
+                    MessageBox.Show("Draw!", "Bummer");
+            }
+
+
         }//end checkforwinner
+
 
         private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
