@@ -162,9 +162,19 @@ namespace Tic_Tac_Toe_Game_in_Visual_Basic
 
             // diagonal checks
             if ((abc1.Text == cab2.Text) && (cab2.Text == bac3.Text) && (!abc1.Enabled))
+            {
+                abc1.BackColor = Color.LightCoral;
+                cab2.BackColor = Color.LightCoral;
+                bac3.BackColor = Color.LightCoral;
                 there_is_a_winner = true;
+            }
             if ((abc3.Text == cab2.Text) && (cab2.Text == bac1.Text) && (!abc3.Enabled))
+            {
+                abc3.BackColor = Color.LightCoral;
+                cab2.BackColor = Color.LightCoral;
+                bac1.BackColor = Color.LightCoral;
                 there_is_a_winner = true;
+            }
 
             // horizontal checks
             else if ((abc1.Text == abc2.Text) && (abc2.Text == abc3.Text) && (!abc1.Enabled))
