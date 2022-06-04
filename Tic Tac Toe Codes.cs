@@ -226,8 +226,11 @@ namespace Tic_Tac_Toe_Game_in_Visual_Basic
             }
 
             catch { }
-
+        }
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
-   
 }
+
