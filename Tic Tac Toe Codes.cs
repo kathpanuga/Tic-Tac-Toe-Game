@@ -4,7 +4,7 @@ namespace Tic_Tac_Toe_Game_in_Visual_Basic
     {
         bool turn = true;// true = X turn; false = O turn
         int turn_count = 0;
-    public Form1()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -68,7 +68,7 @@ namespace Tic_Tac_Toe_Game_in_Visual_Basic
             btn.Enabled = false;
             turn_count++;
 
-           
+
         }
 
         private void cab1_Click(object sender, EventArgs e)
@@ -83,7 +83,7 @@ namespace Tic_Tac_Toe_Game_in_Visual_Basic
             btn.Enabled = false;
             turn_count++;
 
-           
+
         }
 
         private void cab2_Click(object sender, EventArgs e)
@@ -157,6 +157,16 @@ namespace Tic_Tac_Toe_Game_in_Visual_Basic
             btn.Enabled = false;
             turn_count++;
 
+        }
+        private void checkwinner()
+        {
+            bool there_is_a_winner = false;
+
+            // diagonal checks
+            if ((abc1.Text == cab2.Text) && (cab2.Text == bac3.Text) && (!abc1.Enabled))
+                there_is_a_winner = true;
+            if ((abc3.Text == cab2.Text) && (cab2.Text == bac1.Text) && (!abc3.Enabled))
+                there_is_a_winner = true;
         }
     }
 }
