@@ -181,6 +181,21 @@ namespace Tic_Tac_Toe_Game_in_Visual_Basic
                 there_is_a_winner = true;
             else if ((abc3.Text == cab3.Text) && (cab3.Text == bac3.Text) && (!abc3.Enabled))
                 there_is_a_winner = true;
-        }
+
+            if (there_is_a_winner)
+            {
+                disableButtons();
+
+                string winner = "";
+
+                if (turn)
+                    winner = "O";
+                else
+                    winner = "X";
+
+                MessageBox.Show(winner + " - Ah ah, Ikaw ang panalo!", "Paburger ka naman");
+            }//end if
+        }//end checkforwinner
     }
+   
 }
