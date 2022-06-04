@@ -199,13 +199,29 @@ namespace Tic_Tac_Toe_Game_in_Visual_Basic
                 there_is_a_winner = true;
             }
 
+
             // vertical checks
             else if ((abc1.Text == cab1.Text) && (cab1.Text == bac1.Text) && (!abc1.Enabled))
+            {
+                abc1.BackColor = Color.PeachPuff;
+                cab1.BackColor = Color.PeachPuff;
+                bac1.BackColor = Color.PeachPuff;
                 there_is_a_winner = true;
+            }
             else if ((abc2.Text == cab2.Text) && (cab2.Text == bac2.Text) && (!abc2.Enabled))
+            {
+                abc2.BackColor = Color.PeachPuff;
+                cab2.BackColor = Color.PeachPuff;
+                bac2.BackColor = Color.PeachPuff;
                 there_is_a_winner = true;
+            }
             else if ((abc3.Text == cab3.Text) && (cab3.Text == bac3.Text) && (!abc3.Enabled))
+            {
+                abc3.BackColor = Color.PeachPuff;
+                cab3.BackColor = Color.PeachPuff;
+                bac3.BackColor = Color.PeachPuff;
                 there_is_a_winner = true;
+            }
 
             if (there_is_a_winner)
             {
