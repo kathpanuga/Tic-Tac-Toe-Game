@@ -167,6 +167,22 @@ namespace Tic_Tac_Toe_Game_in_Visual_Basic
                 there_is_a_winner = true;
             if ((abc3.Text == cab2.Text) && (cab2.Text == bac1.Text) && (!abc3.Enabled))
                 there_is_a_winner = true;
+
+            // horizontal checks
+            else if ((abc1.Text == abc2.Text) && (abc2.Text == abc3.Text) && (!abc1.Enabled))
+                there_is_a_winner = true;
+            else if ((cab1.Text == cab2.Text) && (cab2.Text == cab3.Text) && (!cab1.Enabled))
+                there_is_a_winner = true;
+            else if ((bac1.Text == bac2.Text) && (bac2.Text == bac3.Text) && (!bac1.Enabled))
+                there_is_a_winner = true;
+
+            // vertical checks
+            else if ((abc1.Text == cab1.Text) && (cab1.Text == bac1.Text) && (!abc1.Enabled))
+                there_is_a_winner = true;
+            else if ((abc2.Text == cab2.Text) && (cab2.Text == bac2.Text) && (!abc2.Enabled))
+                there_is_a_winner = true;
+            else if ((abc3.Text == cab3.Text) && (cab3.Text == bac3.Text) && (!abc3.Enabled))
+                there_is_a_winner = true;
         }
     }
 }
