@@ -37,9 +37,7 @@ namespace Tic_Tac_Toe_Game_in_Visual_Basic
             turn = !turn;
             btn.Enabled = false;
             turn_count++;
-
-
-
+            checkwinner();
         }
 
         private void abc2_Click(object sender, EventArgs e)
@@ -53,6 +51,7 @@ namespace Tic_Tac_Toe_Game_in_Visual_Basic
             turn = !turn;
             btn.Enabled = false;
             turn_count++;
+            checkwinner();
 
         }
 
@@ -67,8 +66,7 @@ namespace Tic_Tac_Toe_Game_in_Visual_Basic
             turn = !turn;
             btn.Enabled = false;
             turn_count++;
-
-
+            checkwinner();
         }
 
         private void cab1_Click(object sender, EventArgs e)
@@ -82,7 +80,7 @@ namespace Tic_Tac_Toe_Game_in_Visual_Basic
             turn = !turn;
             btn.Enabled = false;
             turn_count++;
-
+            checkwinner();
 
         }
 
@@ -97,7 +95,7 @@ namespace Tic_Tac_Toe_Game_in_Visual_Basic
             turn = !turn;
             btn.Enabled = false;
             turn_count++;
-
+            checkwinner();
 
         }
 
@@ -112,7 +110,7 @@ namespace Tic_Tac_Toe_Game_in_Visual_Basic
             turn = !turn;
             btn.Enabled = false;
             turn_count++;
-
+            checkwinner();
 
         }
 
@@ -127,7 +125,7 @@ namespace Tic_Tac_Toe_Game_in_Visual_Basic
             turn = !turn;
             btn.Enabled = false;
             turn_count++;
-
+            checkwinner();
 
         }
 
@@ -142,7 +140,7 @@ namespace Tic_Tac_Toe_Game_in_Visual_Basic
             turn = !turn;
             btn.Enabled = false;
             turn_count++;
-
+            checkwinner();
         }
 
         private void bac3_Click(object sender, EventArgs e)
@@ -156,7 +154,7 @@ namespace Tic_Tac_Toe_Game_in_Visual_Basic
             turn = !turn;
             btn.Enabled = false;
             turn_count++;
-
+            checkwinner();
         }
         private void checkwinner()
         {
